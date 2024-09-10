@@ -35,7 +35,7 @@ html_theme_options = {"flavor": "rocm"}
 
 external_toc_path = "./sphinx/_toc.yml"
 
-extensions = ["rocm_docs", "rocm_docs.doxygen"]
+extensions = ["rocm_docs", "rocm_docs.doxygen", "sphinx_sitemap"]
 doxygen_root = "demo/doxygen"
 doxysphinx_enabled = True
 doxygen_project = {
@@ -51,3 +51,6 @@ author = "Advanced Micro Devices, Inc."
 copyright = (
     "Copyright (c) 2024 Advanced Micro Devices, Inc. All rights reserved."
 )
+
+# for sitemap
+html_baseurl = "https://rocm.docs.amd.com/projects/rocm-docs-core/"
